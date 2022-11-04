@@ -2,7 +2,8 @@ import cls from './Input.module.scss'
 const Input = ({
     placeholder,
     searchTerm,
-    handleChange
+    handleChange,
+    ...rest
 }) => {
     return (
         <input
@@ -11,6 +12,7 @@ const Input = ({
             placeholder={placeholder}
             value={searchTerm}
             onChange={handleChange}
+            {...rest}
         />
     )
 }

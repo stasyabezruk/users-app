@@ -2,10 +2,10 @@ import cls from './Button.module.scss'
 
 const Button = ({
     label,
-    handleCLick
+    handleClick
 }) => {
     return (
-        <button className={cls.button} onClick={handleCLick}>{label}</button>
+        <button className={cls.button} onClick={handleClick}>{label}</button>
     )
 }
 
