@@ -1,9 +1,9 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import SearchPage from "../pages/SearchPage"
-import UserPage from "../pages/UserPage"
-import './App.scss'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SearchPage from '../pages/SearchPage';
+import UserPage from '../pages/UserPage';
+import './App.scss';
 
-const App = () => {
+function App() {
   return (
     <div className="App">
       <BrowserRouter>
@@ -13,7 +13,7 @@ const App = () => {
         </Routes>
       </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

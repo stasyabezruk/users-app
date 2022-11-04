@@ -1,12 +1,12 @@
-import axios from 'axios'
-import { baseURL } from '../constants/url'
+import axios from 'axios';
+import { baseURL } from '../constants/url';
 
 const client = axios.create({
-    baseURL
-})
+  baseURL
+});
 
 client.interceptors.request.use((config) => {
-    return config
-})
+  return config;
+});
 
-export default client
+export default client;

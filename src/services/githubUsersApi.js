@@ -1,5 +1,5 @@
-import client from "./client"
+import client from './client';
 
-export const getGithubUserProfile = user => {
-    return client.get(`/${user}`)
-}
+export const getGithubUserProfile = (user) => {
+  return client.get(`/${user}`);
+};

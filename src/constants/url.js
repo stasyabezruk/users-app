@@ -1,2 +1,2 @@
-export const baseURL = 'https://api.github.com/users'
-export const userPageUrl = '/user'
+export const baseURL = 'https://api.github.com/users';
+export const userPageUrl = '/user';

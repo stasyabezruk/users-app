@@ -1,12 +1,11 @@
-import cls from './Button.module.scss'
+import cls from './Button.module.scss';
 
-const Button = ({
-    label,
-    handleClick
-}) => {
-    return (
-        <button className={cls.button} onClick={handleClick}>{label}</button>
-    )
+function Button({ label, handleClick }) {
+  return (
+    <button className={cls.button} onClick={handleClick} data-testid="button">
+      {label}
+    </button>
+  );
 }
 
 export default Button;
