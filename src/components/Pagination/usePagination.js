@@ -3,6 +3,15 @@ import { range } from './utils';
 
 export const DOTS = '...';
 
+/**
+ * Returns paginationRange - the range of numbers to be displayed in our pagination component as an array
+ *
+ * @param {number} totalCount Total count of data available from the source.
+ * @param {number} pageSize Maximum data that is visible in a single page.
+ * @param {number} siblingCount Min number of page buttons to be shown on each side of the current page button.
+ * @param {number} currentPage The current active page. We'll use a 1-based index instead of a traditional 0-based index for our currentPage value.
+ */
+
 export const usePagination = ({ totalCount, pageSize, siblingCount = 1, currentPage }) => {
     const paginationRange = useMemo(() => {
         const totalPageCount = Math.ceil(totalCount / pageSize);
@@ -49,6 +58,8 @@ export const usePagination = ({ totalCount, pageSize, siblingCount = 1, currentP
             let middleRange = range(leftSiblingIndex, rightSiblingIndex);
             return [firstPageIndex, DOTS, ...middleRange, DOTS, lastPageIndex];
         }
+
+        //computation logic needs to re - run when either  currentPage, pageSize, siblingCount, or totalCount changes.
     }, [totalCount, pageSize, siblingCount, currentPage]);
 
     return paginationRange;

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 
-export const useAxios = (callback, axiosParams) => {
+export const useAxios = (callback, axiosParams, initFetch) => {
     const [response, setResponse] = useState(undefined);
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(true);
@@ -21,7 +21,7 @@ export const useAxios = (callback, axiosParams) => {
 
     useEffect(() => {
         fetchData(axiosParams);
-    }, [axiosParams, fetchData]); // execute once only
+    }, [initFetch]); // execute once only
 
     return { response, error, loading };
 };

@@ -15,8 +15,7 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react",
-        "prettier"
+        "react"
     ],
     "ignorePatterns": [
         "**/assets",

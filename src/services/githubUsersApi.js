@@ -1,9 +1,9 @@
 import client from './client';
 
-export const getGithubUserProfile = (user) => {
-    return client.get(`/${user}`);
+export const getGithubUserProfile = ({ userName }) => {
+    return client.get(`/${userName}`);
 };
 
-export const getGithubUserRepositories = (user, pageNumber, showAmount = 10) => {
-    return client.get(`/${user}/repos?page=${pageNumber}&per_page=${showAmount}`);
+export const getGithubUserRepositories = ({ userName, currentPage = 1, showAmount = 10 }) => {
+    return client.get(`/${userName}/repos?page=${currentPage}&per_page=${showAmount}`);
 };

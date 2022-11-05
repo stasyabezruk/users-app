@@ -8,7 +8,7 @@ import { getGithubUserProfile } from '../../services/githubUsersApi';
 
 function UserPage() {
     const { userName } = useParams();
-    const { response, loading, error } = useAxios(getGithubUserProfile, userName);
+    const { response, loading, error } = useAxios(getGithubUserProfile, { userName });
 
     return (
         <div className="flexCenter">
