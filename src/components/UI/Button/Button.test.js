@@ -11,7 +11,7 @@ describe('Button', () => {
     it('button onClick handler', () => {
         const handleClick = jest.fn();
         render(<Button handleClick={handleClick} />);
-        const button = screen.getByTestId('button');
+        const button = screen.getByRole('button');
         fireEvent.click(button);
         expect(handleClick).toHaveBeenCalledTimes(1);
     });
