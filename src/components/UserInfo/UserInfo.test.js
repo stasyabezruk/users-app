@@ -10,7 +10,7 @@ describe('UserInfo Component', () => {
   it('renders with props', async () => {
     const props = {
       name: 'owl',
-      avatarURL: 'https://media.giphy.com/media/qISaMW1xwmvNS/giphy.gif'
+      avatarURL: 'https://media.giphy.com/media/qISaMW1xwmvNS/giphy.gif',
     };
     render(<UserInfo {...props} />);
     const userInfoEl = screen.getByTestId('user-info');

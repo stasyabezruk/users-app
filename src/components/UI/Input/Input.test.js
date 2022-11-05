@@ -25,7 +25,7 @@ describe('<Input />', () => {
     const { inputEl } = renderInput({ handleChange: onChange });
     expect(inputEl.value).toBe('');
     fireEvent.change(inputEl, {
-      target: { value: 'black' }
+      target: { value: 'black' },
     });
     await wait(() => expect(onChange).toHaveBeenCalledTimes(1));
     await wait(() => expect(inputEl.value).toBe('black'));
