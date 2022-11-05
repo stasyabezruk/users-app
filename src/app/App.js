@@ -4,16 +4,16 @@ import UserPage from '../pages/UserPage';
 import './App.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/user/:userName" element={<UserPage />} />
-          <Route path="/" element={<SearchPage />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/user/:userName" element={<UserPage />} />
+                    <Route path="/" element={<SearchPage />} />
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;
