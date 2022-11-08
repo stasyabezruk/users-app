@@ -1,0 +1,16 @@
+.list {
+    height: 70%;
+
+    div:first-child h4 {
+        margin-top: 0;
+    }
+
+    h4 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    p span:nth-child(2) {
+        margin-right: 20px
+    }
+}

@@ -33,6 +33,7 @@ const Pagination = (props) => {
                     disabled: currentPage === 1,
                 })}
                 onClick={onPrevious}
+                data-testid="arrow-left"
             >
                 <div className="arrow left" />
             </li>
@@ -62,6 +63,7 @@ const Pagination = (props) => {
                     disabled: currentPage === lastPage,
                 })}
                 onClick={onNext}
+                data-testid="arrow-right"
             >
                 <div className="arrow right" />
             </li>
