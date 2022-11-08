@@ -21,7 +21,7 @@ export const useAxios = (callback, axiosParams, initFetch) => {
 
     useEffect(() => {
         fetchData(axiosParams);
-    }, [initFetch]); // execute once only
+    }, [initFetch]); // optional - to execute fetching manually
 
     return { response, error, loading };
 };
