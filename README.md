@@ -4,6 +4,8 @@ In the project directory, you can run:
 
 `npm test` - Launches the test runner in the interactive watch mode.
 
+`npm lint-fix` - fixes re. eslint.json
+
 #### **Project structure**
 - **app** - core point to the start project
 - **pages** - key point to each page, usually contains api calls
